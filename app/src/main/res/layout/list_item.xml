@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/simpleVideoView"
+        android:layout_width="@dimen/_135sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:visibility="gone"
+        android:id="@+id/iv_play_pause"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.BottomRoundedImageView"
+        android:adjustViewBounds="true"
+        android:src="@drawable/play_circle"
+        app:layout_constraintBottom_toBottomOf="@id/simpleVideoView"
+        app:layout_constraintEnd_toEndOf="@id/simpleVideoView"
+        app:layout_constraintStart_toStartOf="@id/simpleVideoView"
+        app:layout_constraintTop_toTopOf="@id/simpleVideoView"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:visibility="gone"
+        android:id="@+id/iv_replay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.BottomRoundedImageView"
+        android:adjustViewBounds="true"
+        android:src="@drawable/replay"
+        app:layout_constraintBottom_toBottomOf="@id/simpleVideoView"
+        app:layout_constraintEnd_toEndOf="@id/simpleVideoView"
+        app:layout_constraintStart_toStartOf="@id/simpleVideoView"
+        app:layout_constraintTop_toTopOf="@id/simpleVideoView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<LinearLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical">-->
+
+<!--<VideoView-->
+<!--    android:id="@+id/simpleVideoView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"/>-->
+
+<!--<Button-->
+<!--    android:id="@+id/playButton"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Play"/>-->
+
+<!--<Button-->
+<!--    android:id="@+id/stopButton"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Stop"/>-->
+
+<!--<Button-->
+<!--    android:id="@+id/restartButton"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Restart"/>-->
+<!--</LinearLayout>-->
